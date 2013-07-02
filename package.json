@@ -1,6 +1,6 @@
 {
 	"name": "crafity-http",
-	"description": "Crafity's http extensions for node"
+	"description": "Crafity's http extensions for node",
 	"version": "0.0.1",
 	"author": "Bart Riemens <briemens@crafity.com>",
 	"homepage": "https://github.com/Crafity/crafity-http#readme",
