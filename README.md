@@ -1,8 +1,8 @@
-#Crafity Webserver
+#Crafity HTTP
 
 ##Sample Code
 
-	var process = require('crafity-webserver');
+	var process = require('crafity-http');
 	// TODO ...
 	
 
