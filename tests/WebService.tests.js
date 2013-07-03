@@ -53,6 +53,31 @@ jstest.run({
         webservice.close(next);
       }
     ]).on("complete", test.complete);
+  },
+  
+  "Parse a route and return a param from the URL": function (test) {
+    test.async(5000);
+
+    /* A R R A N G E */
+    var webservice = new WebService()
+      , options = createOptions("/echo/this");
+
+    webservice.get("/echo/:value", function (req, res) {
+      return res.end(req.params.value + "\n");
+    });
+    
+    test.steps([
+      function arrange(next) {
+        webservice.listen(options.port, next);
+      },
+      function act(next) {
+        assert.request.expect200(options, "this\n", next);
+      },
+      function cleanup(next) {
+        webservice.close(next);
+      }
+    ]).on("complete", test.complete);
   }
+  
     
 });
