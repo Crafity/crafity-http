@@ -1,3 +1,17 @@
+/*jslint node: true, white: true, unparam: true */
+"use strict";
+/*!
+ * crafity-http - Crafity's lightweight and easy to use http server
+ * Copyright(c) 2013 Crafity
+ * Copyright(c) 2013 Bart Riemens
+ * Copyright(c) 2013 Galina Slavova
+ * MIT Licensed
+ */
+
+/**
+ * Test dependencies.
+ */
+
 var WebService = require('../lib/WebService')
   , jstest = require('crafity-jstest').createContext("WebService")
   , core = require('crafity-core')
