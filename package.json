@@ -2,7 +2,7 @@
 	"name": "crafity-http",
 	"description": "Crafity's http extensions for node",
 	"version": "0.0.3",
-	"author": "Bart Riemens <briemens@crafity.com>",
+  "author": "Galina Slavova <galina@crafity.com> and Bart Riemens <briemens@crafity.com>",
 	"homepage": "https://github.com/Crafity/crafity-http#readme",
 	"keywords": ["crafity", "http", "webserver"],
 	"maintainers": [
