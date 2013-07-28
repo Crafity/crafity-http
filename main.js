@@ -13,6 +13,6 @@
  * Module dependencies.
  */
 
-module.exports = require('./lib/Webservice');
+module.exports = require('./lib/WebService');
 module.exports.fullname = "crafity-http";
 module.exports.version = "0.1.0";
