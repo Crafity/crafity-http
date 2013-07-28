@@ -46,9 +46,9 @@
 	},
 	"dependencies": {
 		"cookies": "~0.3.6",
-		"crafity-gzip": "*",
-		"crafity-core": "*",
-		"crafity-jstest": "*"
+		"crafity-gzip": "~0.1.0",
+		"crafity-core": "~0.1.0",
+		"crafity-jstest": "~0.1.0"
 	},
 	"engines": {
 		"node": "*"
