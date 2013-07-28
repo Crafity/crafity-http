@@ -1,59 +1,60 @@
 {
-	"name": "crafity-http",
-	"description": "Crafity's http extensions for node",
+  "name": "crafity-http",
+  "description": "Crafity's http extensions for node",
   "version": "0.1.0",
   "author": "Galina Slavova <galina@crafity.com> and Bart Riemens <briemens@crafity.com>",
-	"homepage": "https://github.com/Crafity/crafity-http#readme",
-	"keywords": ["crafity", "http", "webserver"],
-	"maintainers": [
-		{
-			"name": "Bart Riemens",
-			"email": "briemens@crafity.com",
-			"web": "http://crafity.com/about/bart"
-		},
-		{
-			"name": "Galina Slavova",
-			"email": "galina@crafity.com",
-			"web": "http://crafity.com/about/galina"
-		}
-	],
-	"contributors": [
-		{
-			"name": "Bart Riemens",
-			"email": "briemens@crafity.com",
-			"web": "http://crafity.com/about/bart"
-		},
-		{
-			"name": "Galina Slavova",
-			"email": "galina@crafity.com",
-			"web": "http://crafity.com/about/galina"
-		}
-	],
-	"main": "./lib/WebService.js",
-	"directories": {},
-	"licenses": [
-		{
-			"type": "The MIT License",
-			"url": "https://github.com/Crafity/crafity-http/blob/master/LICENSE"
-		}
-	],
-	"bugs": {
-		"url": "https://github.com/Crafity/crafity-http/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/crafity/crafity-http"
-	},
-	"dependencies": {
-		"cookies": "~0.3.6",
-		"crafity-gzip": "~0.1.0",
-		"crafity-core": "~0.1.0",
-		"crafity-jstest": "~0.1.0"
-	},
-	"engines": {
-		"node": "*"
-	},
-	"scripts": {
-		"prepublish": "npm prune"
-	}
+  "homepage": "https://github.com/Crafity/crafity-http#readme",
+  "keywords": ["crafity", "http", "webserver"],
+  "maintainers": [
+    {
+      "name": "Bart Riemens",
+      "email": "briemens@crafity.com",
+      "web": "http://crafity.com/about/bart"
+    },
+    {
+      "name": "Galina Slavova",
+      "email": "galina@crafity.com",
+      "web": "http://crafity.com/about/galina"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Bart Riemens",
+      "email": "briemens@crafity.com",
+      "web": "http://crafity.com/about/bart"
+    },
+    {
+      "name": "Galina Slavova",
+      "email": "galina@crafity.com",
+      "web": "http://crafity.com/about/galina"
+    }
+  ],
+  "main": "main.js",
+  "directories": {},
+  "licenses": [
+    {
+      "type": "The MIT License",
+      "url": "https://github.com/Crafity/crafity-http/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Crafity/crafity-http/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crafity/crafity-http"
+  },
+  "dependencies": {
+    "cookies": "~0.3.6",
+    "crafity-gzip": "~0.1.0",
+    "crafity-core": "~0.1.0",
+    "crafity-jstest": "~0.1.0"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "scripts/npm-test.sh"
+  }
 }
