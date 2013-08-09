@@ -228,6 +228,41 @@ jstest.run({
 			}
 		]).on("complete", test.complete);
 	},
+	"Register a route using method 'ALL' and check if it is called properly": function (test) {
+		test.async(5000);
+
+		/* A R R A N G E */
+		var webservice = new WebService()
+			, options = createOptions("/echo/that", "GET");
+
+		webservice.all("/echo/:value", function (req, res) {
+			return res.send(200, req.params.value);
+		});
+
+		test.steps([
+			function arrange(next) {
+				webservice.listen(options.port, next);
+			},
+			function act1(next) {
+				assert.request.expect200(options, "that\n", next);
+			},
+			function act2(next) {
+				options.method = "put";
+				assert.request.expect200(options, "that\n", next);
+			},
+			function act3(next) {
+				options.method = "post";
+				assert.request.expect200(options, "that\n", next);
+			},
+			function act4(next) {
+				options.method = "delete";
+				assert.request.expect200(options, "that\n", next);
+			},
+			function cleanup(next) {
+				webservice.close(next);
+			}
+		]).on("complete", test.complete);
+	},
 	"Insert a 'before' request handler and verify it is being called": function (test) {
 		test.async(2000);
 
