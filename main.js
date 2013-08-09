@@ -15,4 +15,4 @@
 
 module.exports = require('./lib/WebService');
 module.exports.fullname = "crafity-http";
-module.exports.version = "0.1.2";
+module.exports.version = "0.1.3";
